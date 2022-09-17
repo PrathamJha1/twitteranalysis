@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Loginpage() {
   return (
@@ -25,7 +26,9 @@ export default function Loginpage() {
                   <span>Remember me on this computer</span>
                 </label>
               </div>
-              <button class="btn btn-success btn-lg float-right" type="button">Login</button>
+              <Link to='/dash'>
+                <button class="btn btn-success btn-lg float-right" type="button">Login</button>
+              </Link>
             </form>
           </div>
         </div>
