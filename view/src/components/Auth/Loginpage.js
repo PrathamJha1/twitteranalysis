@@ -1,7 +1,13 @@
+import { Button } from 'bootstrap'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Loginpage() {
+
+  const funcName = () => {
+    alert("Its a arrow func")
+  }
+
   return (
     <div class="row justify-content-center">
       <div class="col-md-6">
@@ -26,9 +32,10 @@ export default function Loginpage() {
                   <span>Remember me on this computer</span>
                 </label>
               </div>
-              <Link to='/dash'>
+              <Link to='/dashboard'>
                 <button class="btn btn-success btn-lg float-right" type="button">Login</button>
               </Link>
+              <button onClick={() => funcName()}>Alert </button>
             </form>
           </div>
         </div>

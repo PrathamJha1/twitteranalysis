@@ -1,6 +1,6 @@
 import React from 'react'
-import Loginpage from '../components/Loginpage'
-import Register from '../components/Register'
+import Loginpage from '../components/Auth/Loginpage'
+import Register from '../components/Auth/Register'
 import './authpage.css'
 
 export default function Authpage() {

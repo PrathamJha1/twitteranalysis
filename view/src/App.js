@@ -7,14 +7,16 @@ import {
   Routes
 } from "react-router-dom";
 import UserDashboard from './pages/UserDashboard';
+import AdminPanel from './pages/AdminPanel';
+import Pagetest from './pages/Pagetest';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Authpage />} />
-        <Route path="/dash" element={<UserDashboard />} />
-        {/* <Route path="/createjobform" element={<SimpleFrom2 />} /> */}
+        <Route path="/dashboard" element={<UserDashboard />} />
+        <Route path="/admin-panel" element={<AdminPanel />} />
       </Routes>
     </Router>
   );
